@@ -1,4 +1,8 @@
 let rolling = false;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ROLLING-DICE
 let intervalId;
 
 const numDiceInput = document.getElementById("numDice");
@@ -22,8 +26,15 @@ startStopButton.addEventListener("click", () => {
 function startRollingDice() {
   const numDice = parseInt(numDiceInput.value);
   const numSides = parseInt(numSidesInput.value);
+<<<<<<< HEAD
   intervalId = setInterval(() => {
     const results = [];
+=======
+
+  intervalId = setInterval(() => {
+    const results = [];
+
+>>>>>>> ROLLING-DICE
     let total = 0;
     for (let i = 0; i < numDice; i++) {
       const roll = Math.floor(Math.random() * numSides) + 1;
