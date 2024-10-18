@@ -28,7 +28,6 @@ function startRollingDice() {
     const results = [];
 
     let total = 0;
-
     for (let i = 0; i < numDice; i++) {
       const roll = Math.floor(Math.random() * numSides) + 1;
       results.push(`Die ${i + 1}: ${roll}`);
