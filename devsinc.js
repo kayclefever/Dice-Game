@@ -35,6 +35,14 @@ function startRollingDice() {
       total += roll;
     }
 
+    if (parseInt(numDiceInput.value) == 0) {
+      throw new Error("error");
+    }
+
+    if (parseInt(numDiceInput.value) < 0) {
+      throw new Error("error");
+    }
+
     outputDiv.textContent = results.join(",");
     totalDiv.textContent = `Total: ${total}`;
   }, 100);
